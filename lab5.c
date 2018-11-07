@@ -62,7 +62,7 @@ int main(void)
         {
             printf("%i", matrix_1[i][j]);
         }
+         printf("\n");
     }    
-    printf("\n");
     symetric(matrix, matrix_1, n);
 }
