@@ -17,8 +17,8 @@ void transp(int array[][m], int n)
 
 void symetric(int array[][m], int array_1[][m], int n)
 {   
-    int p;
-    for(int i = 0; i < n; i++)
+    int p = 1;
+    for(int i = 0; p && i < n; i++)
     {
         for(int j = 0; j < n; j++)
         {
@@ -26,9 +26,7 @@ void symetric(int array[][m], int array_1[][m], int n)
             {
                 p = 0;
                 break;
-            }
-            else
-            p = 1;  
+            }  
         }
     }
     if(p == 1)
