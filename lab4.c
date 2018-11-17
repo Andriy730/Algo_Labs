@@ -7,7 +7,6 @@ int main()
     int n = 10;
     int array[ARR_SIZE];
     int array_new[ARR_SIZE];
-    int array_N[ARR_SIZE];
     int a;
     int j = 0;
     
@@ -41,15 +40,15 @@ int main()
     {
         if(k%2 == 1)
         {
-            array_N[i] = 0;
+            array[i] = 0;
             i++;
         }
-        array_N[i] = array_new[k];
+        array[i] = array_new[k];
     }
     
     for(int i = 0; i < c; i++)
     {
-        printf("%i  ", array_N[i]);
+        printf("%i  ", array[i]);
     }
     printf("\n");
 }
